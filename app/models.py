@@ -21,3 +21,9 @@ class ScheduleCreate(BaseModel):
     days_of_week: List[str]  # e.g., ["mon", "tue"] หรือ ["daily"]
     dose_amount: int
     active: bool = True
+
+class UserRegister(BaseModel):
+    name: str
+    phone: str
+    device_id: str
+    line_user_id: Optional[str] = None
